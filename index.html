@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pomodoro App</title>
+</head>
+
+<body id="bodyPomodoro">
+    <div>
+        <form action="/" method="POST" >
+            <label for="activity">Activity</label>
+            <br />
+
+            <input type="text" placeholder="Enter activity" id="activity" name="activity">
+            <br /><br />
+
+            <label for="focus">Settings</label>
+            <br />
+
+            <label for="focus">Focus time (Minimum of 25mins)</label>
+            <input type="text" id="focus" name="focus" value="25" readonly>
+
+            <input type="button" value="+" id="plusFocus">
+            <input type="button" value="-" id="minusFocus">
+            <br />
+
+            <label for="break">Break time (Minimum of 5mins)</label>
+            <input type="text" id="break" name="break" value="5" readonly>
+
+            <input type="button" value="+" id="plusBreak">
+            <input type="button" value="-" id="minusBreak">
+            <br />
+
+            <input type="button" value="Start" id="submit">
+            <input type="button" value="Reset" id="reset">
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <div id="currentPomodoro">
+
+            </div>
+
+            <div id="countdown">
+
+            </div>
+            <div id="cancel">
+
+            </div>
+        </form>
+    </div>
+    <script src="/app.js">
+
+    </script>
+</body>
+
+</html>
